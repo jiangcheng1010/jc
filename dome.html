@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>表单请求</title>
+</head>
+	<style type="text/css">
+		body{background:url(/static/t4.jpg)no-repeat;
+background-size:100%;}
+        .div1 {
+            position: absolute;/*绝对定位，将DIV1外面的大框用绝对定位进行div的固定*/
+            margin-left: 8%;/*距左15%的距离*/
+            margin-top: 200px;/*距上20px的距离*/
+            width: 450px;/*宽设定1000px*/
+            height: 500px;/*高设定400px*/ 
+			
+		}
+		.div2 {
+            position: absolute;/*绝对定位，将DIV1外面的大框用绝对定位进行div的固定*/
+            margin-left: 35%;/*距左15%的距离*/
+            margin-top: 220px;/*距上20px的距离*/
+            width: 450px;/*宽设定1000px*/
+            height: 480px;/*高设定400px*/  
+			
+		}
+		.div3 {
+            position: absolute;/*绝对定位，将DIV1外面的大框用绝对定位进行div的固定*/
+            margin-left: 62%;/*距左15%的距离*/
+            margin-top: 250px;/*距上20px的距离*/
+            width: 520px;/*宽设定1000px*/
+            height: 400px;/*高设定400px*/  
+			
+		}
+		.div4 {
+            position: absolute;/*绝对定位，将DIV1外面的大框用绝对定位进行div的固定*/
+            margin-left: 28%;/*距左的距离*/
+            margin-top: 50px;/*距上的距离*/
+            width: 1000px;/*宽设定1000px*/
+            height: 50px;/*高设定400px*/  
+		}
+    </style>
+<body >
+	
+  <div>
+		 <form action="/dome" method="POST">  
+	<h1 class="div4"><font color="#FBFBFB" size="+4">输入企业的详细数据判断是否为僵尸企业</font></h1>
+	
+
+    <div class="div1">
+            <div >
+                <label for="ID"><font color="#F9F9F9" size="+3">ID</font></label>
+                <input type="text" name="ID" id="ID" style="height: 30px;width: 150px;margin-left: 205px;" />
+            </div>
+            <div>
+                <label for="d1"><font color="#F9F9F9" size="+3">注册时间</font></label>
+                <input type="text" name="d1" id="d1"  style="height: 30px;width: 150px;margin-left: 110px;" />
+            </div>
+			<div>
+                <label for="d2"><font color="#F9F9F9" size="+3">注册资本</font></label>
+                <input type="text" name="d2" id="d2" style="height: 30px;width: 150px;margin-left: 110px;" />
+            </div>
+			<div>
+                <label for="d3"><font color="#F9F9F9" size="+3">行业</font></label>
+               <input type="text" name="d3" id="d3" style="height: 30px;width: 150px;margin-left: 175px;"/>
+            </div>
+			<div>
+                <label for="d4"><font color="#F9F9F9" size="+3">区域</font></label>
+                <input type="text" name="d4" id="d4" style="height: 30px;width: 150px;margin-left: 175px;"/>
+            </div>
+			<div>
+                <label for="d5"><font color="#F9F9F9" size="+3">企业类型</font></label>
+                <input type="text" name="d5" id="d5" style="height:30px;width: 150px;margin-left: 112px;"/>
+            </div>
+			<div>
+                <label for="d6"><font color="#F9F9F9" size="+3">控制人类型</font></label>
+                <input type="text" name="d6" id="d6" style="height: 30px;width: 150px;margin-left: 80px;"/>
+            </div>
+			<div>
+                <label for="d7"><font color="#F9F9F9" size="+3">控制人持股</font></label>
+                <input type="text" name="d7" id="d7" style="height: 30px;width: 150px;margin-left: 80px;"/>
+            </div>
+			<div>
+                <label for="d8"><font color="#F9F9F9" size="+3">专利（1/0）</font></label>
+                <input type="text" name="d8" id="d8" style="height: 30px;width: 150px;margin-left: 63px;"/>
+            </div>
+			<div>
+                <label for="d9"><font color="#F9F9F9" size="+3">商标（1/0）</font></label>
+                <input type="text" name="d9" id="d9" style="height: 30px;width: 150px;margin-left: 63px;"/>
+            </div>
+			<div>
+                <label for="d10"><font color="#F9F9F9" size="+3">著作权（1/0）</font></label>
+                <input type="text" name="d10" id="d10" style="height: 30px;width: 150px;margin-left: 32px;"/>
+            </div>
+			<div>
+                <input type="submit" value="提交" style="width:120px; height:50px;margin-left:160% ;margin-top: 15%" />
+            </div>
+        
+    </div>
+
+	<div class="div2">
+        
+            <div >
+                <label for="h1"><font color="#F9F9F9" size="+3">year</font></label>
+                <input type="text" name="h1" id="h1" style="height: 30px;width: 150px;margin-left: 173px;" />
+            </div>
+            <div>
+                <label for="h2"><font color="#F9F9F9" size="+3">从业人数</font></label>
+                <input type="text" name="h2" id="h2"  style="height: 30px;width: 150px;margin-left: 110px;" />
+            </div>
+			<div>
+                <label for="h3"><font color="#F9F9F9" size="+3">资产总额</font></label>
+                <input type="text" name="h3" id="h3" style="height: 30px;width: 150px;margin-left: 110px;" />
+            </div>
+			<div>
+                <label for="h4"><font color="#F9F9F9" size="+3">负债总额</font></label>
+                <input type="text" name="h4" id="h4" style="height: 30px;width: 150px;margin-left: 110px;"/>
+            </div>
+			<div>
+                <label for="h5"><font color="#F9F9F9" size="+3">营业总收入</font></label>
+                <input type="text" name="h5" id="h5" style="height: 30px;width: 150px;margin-left: 78px;"/>
+            </div>
+			<div>
+                <label for="h6"><font color="#F9F9F9" size="+3">主营业务收入</font></label>
+                <input type="text" name="h6" id="h6" style="height: 30px;width: 150px;margin-left: 45px;"/>
+            </div>
+			<div>
+                <label for="h7"><font color="#F9F9F9" size="+3">利润总额</font></label>
+                <input type="text" name="h7" id="h7" style="height: 30px;width: 150px;margin-left: 110px;"/>
+            </div>
+			<div>
+                <label for="h8"><font color="#F9F9F9" size="+3">净利润</font></label>
+                <input type="text" name="h8" id="h8" style="height: 30px;width: 150px;margin-left: 142px;"/>
+            </div>
+			<div>
+                <label for="h9"><font color="#F9F9F9" size="+3">纳税总额</font></label>
+                <input type="text" name="h9" id="h9" style="height: 30px;width: 150px;margin-left: 110px;"/>
+            </div>
+			<div>
+                <label for="h10"><font color="#F9F9F9" size="+3">所有者权益合计</font></label>
+                <input type="text" name="h10" id="h10" style="height: 30px;width: 150px;margin-left: 15px;"/>
+            </div>  
+    </div>
+	<div class="div3">
+        
+            <div >
+                <label for="m1"><font color="#F9F9F9" size="+3">债权融资额度</font></label>
+                <input type="text" name="m1" id="m1" style="height: 30px;width: 150px;margin-left: 160px;" />
+            </div>
+            <div>
+                <label for="m2"><font color="#F9F9F9" size="+3">债权融资成本</font></label>
+                <input type="text" name="m2" id="m2"  style="height: 30px;width: 150px;margin-left: 160px;" />
+            </div>
+			<div>
+                <label for="m3"><font color="#F9F9F9" size="+3">股权融资额度</font></label>
+                <input type="text" name="m3" id="m3" style="height: 30px;width: 150px;margin-left: 160px;" />
+            </div>
+			<div>
+                <label for="m4"><font color="#F9F9F9" size="+3">股权融资成本</font></label>
+                <input type="text" name="m4" id="m4" style="height: 30px;width: 150px;margin-left: 160px;"/>
+            </div>
+			<div>
+                <label for="m5"><font color="#F9F9F9" size="+3">内部融资和贸易融资额度</font></label>
+                <input type="text" name="m5" id="m5" style="height: 30px;width: 150px;margin-left: 0px;"/>
+            </div>
+			<div>
+                <label for="m6"><font color="#F9F9F9" size="+3">内部融资和贸易融资成本</font></label>
+                <input type="text" name="m6" id="m6" style="height: 30px;width: 150px;margin-left: 0px;"/>
+            </div>
+			<div>
+                <label for="m7"><font color="#F9F9F9" size="+3">项目融资和政策融资额度</font></label>
+                <input type="text" name="m7" id="m7" style="height: 30px;width: 150px;margin-left: 0px;"/>
+            </div>
+			<div>
+                <label for="m8"><font color="#F9F9F9" size="+3">项目融资和政策融资成本</font></label>
+                <input type="text" name="m8" id="m8" style="height: 30px;width: 150px;margin-left: 0px;"/>
+            </div>
+        
+</div>
+	 </form>
+	  </div>
+</body>
+</html>
